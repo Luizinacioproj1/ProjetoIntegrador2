@@ -1,0 +1,8 @@
+<h2>Área do usuário</h2>
+
+<p *ngIf="usuarioLogado">Usuário autenticado</p>
+<p *ngIf="!usuarioLogado">Usuário não autorizado</p>
+
+<button (click)="entrarSair()">
+  {{ usuarioLogado ? 'Sair' : 'Entrar' }}
+</button>
